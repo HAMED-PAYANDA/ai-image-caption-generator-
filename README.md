@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🖼️ Give Meaningful Names to Your Photos with Image Captioning AI
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
@@ -6,10 +8,18 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.2.1-red.svg)
 ![IBM](https://img.shields.io/badge/IBM-CognitiveClass.ai-052FAD.svg)
 
+</div>
+
 ## 📌 Overview
 Images are rich with untapped visual information, but search engines and data systems cannot inherently "see" them. This project leverages state-of-the-art **Generative AI** and **Vision-Language Pre-training** to automatically translate visual data into machine-readable and human-readable text descriptions. 
 
 Developed as part of the **IBM AI Developer Series**, this tool replaces generic filenames (like `image09321.jpeg`) with meaningful captions, streamlining data organization, boosting accessibility, and enhancing visual content searchability.
+
+---
+
+## 👀 App Preview
+![Gradio Web App Interface](screenshot.png)  
+*(Note: Upload a screenshot of your running Gradio app to your repository and name it `screenshot.png` to display it here!)*
 
 ---
 
@@ -19,6 +29,13 @@ In a fast-paced news agency, publishing hundreds of articles daily requires hand
 This AI tool expedites the pipeline by automatically generating suggested captions for bulk images, serving two critical purposes:
 1. ♿ **Enhanced Accessibility:** Captions are integrated as alternative text (alt text). Visually impaired users utilizing screen readers can fully understand the visual context, adhering to inclusive design principles.
 2. 🔍 **Improved SEO:** Search engines like Google rely on alt text for indexing. Properly captioned images with relevant keywords drastically improve the article's search engine ranking and drive organic traffic.
+
+---
+
+## ✨ Example Output
+Instead of manual tagging, the script processes URLs or local images and outputs directly to `captions.txt`:
+> `https://en.wikipedia.org/wiki/IBM/image_001.jpg` : *a black and white photo of a vintage ibm computer system*
+> `local_image_002.jpeg` : *two dogs playing in the green grass*
 
 ---
 
@@ -55,30 +72,30 @@ This AI tool expedites the pipeline by automatically generating suggested captio
 
 ## 💻 Installation & Setup
 
-#1. Clone the Repository:
-
+**1. Clone the Repository:**
+```bash
 git clone [https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git](https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git)
 cd ai-image-caption-generator-
 
-#2. Create a Virtual Environment:
+2. Create a Virtual Environment:
 python3 -m venv my_env
 source my_env/bin/activate  # On Windows: my_env\Scripts\activate
 
-#3. Install Dependencies:
+3. Install Dependencies:
 pip install -r requirements.txt
 
 ⚙️ How to Run
-#1. Launch the Web Interface (Gradio App)
+1. Launch the Web Interface (Gradio App)
 To interact with the AI through a clean UI in your browser:
 python3 image_captioning_app.py
 
 Navigate to http://0.0.0.0:7860 in your web browser to upload images and generate captions.
-#2. Run the Automated URL Captioner
+2. Run the Automated URL Captioner
 To scrape a webpage (e.g., Wikipedia) and caption all its images:
 python3 automate_url_captioner.py
 
 Results will automatically populate in captions.txt.
-#3. Caption a Single Local Image
+3. Caption a Single Local Image
 Update the img_path variable inside the script, then run:
 python3 image_cap.py
 
@@ -86,4 +103,3 @@ python3 image_cap.py
 •	Lab Provider: CognitiveClass.ai (IBM Skills Network).
 •	Model Credit: Salesforce BLIP Model available on Hugging Face.
 •	Content License: Licensed under the Apache 2.0 License.
-
