@@ -19,7 +19,7 @@ Developed as part of the **IBM AI Developer Series**, this tool replaces generic
 
 ## 👀 App Preview
 ![Gradio Web App Interface](screenshot.png)  
-*(Note: Upload a screenshot of your running Gradio app to your repository and name it `screenshot.png` to display it here!)*
+
 
 ---
 
