@@ -60,7 +60,8 @@ This AI tool expedites the pipeline by automatically generating suggested captio
 git clone [https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git](https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git)
 cd ai-image-caption-generator-
 
-2. Create a Virtual Environment:
+**2. Create a Virtual Environment:**
+```
 python3 -m venv my_env
 source my_env/bin/activate  # On Windows: my_env\Scripts\activate
 
