@@ -55,8 +55,8 @@ This AI tool expedites the pipeline by automatically generating suggested captio
 
 ## 💻 Installation & Setup
 
-**1. Clone the Repository:**
-```bash
+1. Clone the Repository:
+
 git clone [https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git](https://github.com/HAMED-PAYANDA/ai-image-caption-generator-.git)
 cd ai-image-caption-generator-
 
@@ -66,3 +66,24 @@ source my_env/bin/activate  # On Windows: my_env\Scripts\activate
 
 3. Install Dependencies:
 pip install -r requirements.txt
+
+⚙️ How to Run
+1. Launch the Web Interface (Gradio App)
+To interact with the AI through a clean UI in your browser:
+python3 image_captioning_app.py
+
+Navigate to http://0.0.0.0:7860 in your web browser to upload images and generate captions.
+2. Run the Automated URL Captioner
+To scrape a webpage (e.g., Wikipedia) and caption all its images:
+python3 automate_url_captioner.py
+
+esults will automatically populate in captions.txt.
+3. Caption a Single Local Image
+Update the img_path variable inside the script, then run:
+python3 image_cap.py
+
+📜 License & Acknowledgments
+•	Lab Provider: CognitiveClass.ai (IBM Skills Network).
+•	Model Credit: Salesforce BLIP Model available on Hugging Face.
+•	Content License: Licensed under the Apache 2.0 License.
+
