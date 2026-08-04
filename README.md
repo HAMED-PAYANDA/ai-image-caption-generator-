@@ -17,7 +17,7 @@ Developed as part of the **IBM AI Developer Series**, this tool replaces generic
 
 ---
 
-## 👀 App Preview
+## 📷⚡📝 App Preview
 ![Gradio Web App Interface](screenshot.png)  
 
 
