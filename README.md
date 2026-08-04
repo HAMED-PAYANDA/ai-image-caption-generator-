@@ -119,3 +119,4 @@ python3 image_cap.py
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
 Completed as part of the IBM AI Developer.
+
