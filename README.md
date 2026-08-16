@@ -152,9 +152,9 @@ python3 image_cap.py
 
 📜 License & Acknowledgments
 
-•	**Lab Provider: CognitiveClass.ai (IBM Skills Network).
-•	**Model Credit: Salesforce BLIP Model available on Hugging Face.
-•	**Content License: Licensed under the Apache 2.0 License.
+* **Lab Provider: CognitiveClass.ai (IBM Skills Network).
+* **Model Credit: Salesforce BLIP Model available on Hugging Face.
+* **Content License: Licensed under the Apache 2.0 License.
 
 **Hamed Payanda**
 * **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
