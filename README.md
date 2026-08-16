@@ -50,7 +50,30 @@ Instead of manual tagging, the script processes URLs or local images and outputs
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## 🏗️ Architecture & Workflow Diagram
+
+```mermaid
+graph TD
+    subgraph Input Sources
+        A[User / Web Browser] -->|Uploads Image| B(Gradio Web App)
+        C[Webpage URL] -->|Extracts <img> tags| D(BeautifulSoup Scraper)
+        H[Local File Directory] -->|glob batch read| I(Local Python Script)
+    end
+
+    subgraph AI Processing
+        B -->|Image Data| E{Hugging Face: BLIP Model}
+        D -->|Downloaded Images| E
+        I -->|Local Images| E
+    end
+
+    subgraph Output
+        E -->|Generated Text| F[UI Display: Meaningful Caption]
+        E -->|Batch Processing| G[Text File: captions.txt]
+    end
+```
+---
+
+## 🛠️ Core Tech Stack
 
 * **Language:** Python
 * **Vision-Language Model:** Hugging Face `Transformers` (`AutoProcessor`, `BlipForConditionalGeneration`)
@@ -61,6 +84,20 @@ Instead of manual tagging, the script processes URLs or local images and outputs
 ---
 
 ## 📂 Repository Structure
+```text
+ai-image-caption-generator/
+├── .theia/                    # Cloud IDE configuration settings
+├── automate_url_captioner.py  # Web scraper for batch image downloading and captioning
+├── captions.txt               # Output file for batch generated captions
+├── hello.py                   # Environment testing script
+├── image.jpeg                 # Sample local image for testing
+├── image_cap.py               # Core script for local image captioning
+├── image_captioning_app.py    # Gradio web interface application
+├── requirements.txt           # Python project dependencies
+├── screenshot.png             # UI preview image
+├── LICENSE                    # Apache 2.0 License
+└── README.md                  # Project documentation
+```
 
 | File | Description |
 | :--- | :--- |
@@ -111,14 +148,17 @@ Update the img_path variable inside the script, then run:
 ```text
 python3 image_cap.py
 ```
+---
 
 📜 License & Acknowledgments
-•	Lab Provider: CognitiveClass.ai (IBM Skills Network).
-•	Model Credit: Salesforce BLIP Model available on Hugging Face.
-•	Content License: Licensed under the Apache 2.0 License.
+
+•	**Lab Provider: CognitiveClass.ai (IBM Skills Network).
+•	**Model Credit: Salesforce BLIP Model available on Hugging Face.
+•	**Content License: Licensed under the Apache 2.0 License.
 
 **Hamed Payanda**
 * **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
 * Completed as part of the **IBM AI Developer Program**.
+
 
 
