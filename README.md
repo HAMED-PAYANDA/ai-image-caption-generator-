@@ -6,7 +6,9 @@
 ![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Transformers-yellow.svg)
 ![Gradio](https://img.shields.io/badge/Gradio-UI-orange.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.2.1-red.svg)
+[![IBM Certification](https://img.shields.io/badge/IBM-AI%20Developer%20Program-blue?style=flat&logo=ibm)](https://cognitiveclass.ai/)
 ![IBM](https://img.shields.io/badge/IBM-CognitiveClass.ai-052FAD.svg)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 
 </div>
 
@@ -115,8 +117,8 @@ python3 image_cap.py
 •	Model Credit: Salesforce BLIP Model available on Hugging Face.
 •	Content License: Licensed under the Apache 2.0 License.
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM AI Developer.
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM AI Developer Program**.
+
 
