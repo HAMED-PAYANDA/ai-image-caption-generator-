@@ -150,7 +150,7 @@ python3 image_cap.py
 ```
 ---
 
-📜 License & Acknowledgments
+## 📜 License & Acknowledgments
 
 * Lab Provider: CognitiveClass.ai (IBM Skills Network).
 * Model Credit: Salesforce BLIP Model available on Hugging Face.
